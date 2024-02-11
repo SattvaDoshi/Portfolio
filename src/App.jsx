@@ -4,6 +4,8 @@ import Landing from './components/Landing'
 import Marque from './components/Marque'
 import About from './components/About'
 import Featured from './components/Featured'
+import Footer from './components/Footer'
+import Skills from './components/Skills'
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Marque/>
       <About/>
       <Featured/>
+      <Skills/>
+      <Footer/>
     </div>
    
   </>
