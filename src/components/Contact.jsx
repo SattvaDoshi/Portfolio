@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const Footer = () => {
+const Contact = () => {
     const [rotate, setRotate] = useState(0);
 
     useEffect(() => {
@@ -52,4 +52,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Contact

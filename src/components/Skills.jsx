@@ -68,7 +68,7 @@ function SkillsSection() {
   };
 
   return (
-    <section className="bg-zinc-900 mt-16 py-20 text-white py-20 px-4">
+    <section className="bg-zinc-900 py-20 text-white py-20 px-4">
       <h2 className="text-5xl center font-bold mb-8">My Skills</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {skills.map((skill) => (

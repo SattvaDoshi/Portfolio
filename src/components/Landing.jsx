@@ -1,27 +1,32 @@
 import React from 'react'
 
-const Landing = () => {
-  return (
-    <div className='w-full h-screen bg-zinc-900 pt-1'>
-        <div className="text mt-32 px-20">
-            <div className="masker">
-                <h1 className='text-8xl leading-[5vw] tracking-tighter font-semibold text-white'>WEB-DEVELOPER</h1>
-            </div>
-            <div className="masker">
-                <h1 className='text-8xl leading-[5vw]  tracking-tighter font-semibold text-white'>THAT EXCEEDS</h1>
-            </div>
-            <div className="masker">
-                <h1 className='text-8xl leading-[5vw] tracking-tighter font-semibold text-white'>YOUR EXPECTATION</h1>
-            </div>
-            <div className="border-t-2 mt-32 border-zinc-700 flex justify-between">
-                {["For Private","lorem we is about"].map((item,idx)=>(
-                    <p className='text-md mt-5 font-light tracking-tight leading-none text-white'>{item}</p>
-                ))}
 
-                <div className="px-4 py-2 mt-5 rounded-full border-[1px] text-white border-zinc-500">Contact Me</div>
-            </div>
-        </div>
+const Landing = () => {
+
+  return (
+    <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full h-screen bg-zinc-900 pt-1'>
+    <div className="text mt-20 md:mt-32 px-5 md:px-20">
+      <div className="masker">
+        <h1 className='text-4xl md:text-8xl leading-[5vw] md:leading-[6vw] tracking-tighter font-semibold md:mt-2 text-white text-center md:text-left mt-8'>
+          WEB-DEVELOPER
+        </h1>
+        <h1 className='text-4xl md:text-8xl leading-[5vw] md:leading-[6vw] tracking-tighter font-semibold md:mt-2 text-white text-center md:text-left mt-8'>
+          THAT EXCEEDS 
+        </h1>
+        <h1 className='text-4xl md:text-8xl leading-[5vw] md:leading-[6vw] tracking-tighter font-semibold md:mt-2 text-white text-center md:text-left mt-8'>
+          YOUR EXPECTATION
+        </h1>
+      </div>
     </div>
+    <div className="border-t-2 mt-16 md:mt-32 px-5 md:px-20 border-zinc-700 flex flex-col md:flex-row items-center justify-center md:justify-between">
+      <div className="mb-4 md:mb-0">
+        <div className="px-6 py-3 md:px-8 md:py-4 rounded-full border-[1px] mt-16 text-base md:text-lg text-white border-zinc-500 text-center md:text-left">
+          Contact Me
+        </div>
+      </div>
+    </div>
+  </div>
+  
   )
 }
 
