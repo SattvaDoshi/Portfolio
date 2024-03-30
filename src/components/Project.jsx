@@ -16,7 +16,7 @@ const Project = () => {
                         <div class="flex flex-col justify-between h-full">
 
                             <div class="mt-auto md:space-y-4 sm:mt-0 sm:space-y-2">
-                                <h1 class="text-[#16453a] text-xl sm:text-2xl font-bold leading-5">Expense Tracker</h1>
+                                <h1 class="text-[#16453a] text-xl sm:text-2xl mb-6 font-bold leading-5">Expense Tracker</h1>
                                 <p class="text-[#16453a] mt-2 text-lg sm:text-base font-light leading-5 overflow-hidden">
                                 This is the  Expense Tracker application developed using React where in you can enter Your
                                 Budget and named it and then can remove expenditure , you can make N number of Expense. This will be
@@ -41,7 +41,7 @@ const Project = () => {
                         <div class="flex flex-col justify-between h-full">
 
                             <div class="mt-auto md:space-y-4 sm:mt-0 sm:space-y-2">
-                                <h1 class="text-[#16453a] text-xl sm:text-2xl font-bold leading-5">Trading Guru</h1>
+                                <h1 class="text-[#16453a] text-xl sm:text-2xl mb-6 font-bold leading-5">Trading Guru</h1>
                                 <p class="text-[#16453a] text-lg sm:text-base font-light leading-5 overflow-hidden">
                                 This is the Website for the Trading who Wants to online and I helped them in Making website. 
                                 This is Dynamic Website as well as Responsive</p>
@@ -64,7 +64,7 @@ const Project = () => {
                         <div class="flex flex-col justify-between h-full">
 
                             <div class="mt-auto md:space-y-4 sm:mt-0 sm:space-y-2">
-                                <h1 class="text-[#16453a] text-xl sm:text-2xl font-bold leading-5">Dictionary</h1>
+                                <h1 class="text-[#16453a] text-xl sm:text-2xl mb-6 font-bold leading-5">Dictionary</h1>
                                 <p class="text-[#16453a] text-lg sm:text-base font-light leading-5 overflow-hidden">
                                     This is the Dictionary App where i have used a External Api in 
                                     which my App is Supported in 7 Different Languaged
@@ -88,7 +88,7 @@ const Project = () => {
                         <div class="flex flex-col justify-between h-full">
 
                             <div class="mt-auto md:space-y-4 sm:mt-0 sm:space-y-2">
-                                <h1 class="text-[#16453a] text-xl sm:text-2xl font-bold leading-5">Whack a Mole</h1>
+                                <h1 class="text-[#16453a] text-xl sm:text-2xl mb-6 font-bold leading-5">Whack a Mole</h1>
                                 <p class="text-[#16453a] text-lg sm:text-base font-light leading-5 overflow-hidden">
                                     This is the small Beginner level Project made a game using HTML CSS and JS
                                     made and deployed on Github you can check out

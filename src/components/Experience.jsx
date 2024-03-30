@@ -4,7 +4,7 @@ const ExperiencePage = () => {
     return (
         <div className="bg-zinc-900 flex flex-col md:flex-row  gap-32 px-20 py-10 min-h-screen">
             <div className="left">
-                <h1 className='text-black rounded-xl text-4xl p-4 bg-white  '>Experience</h1>
+                <h1 className='text-black rounded-xl md:text-4xl text-3xl p-4 bg-white  '>Experience</h1>
             <ol class="relative border-s mt-8 border-gray-200 dark:border-gray-700">
                 <li class="mb-10 ms-6">
                     <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
@@ -41,7 +41,7 @@ const ExperiencePage = () => {
 
             </div>
             <div className="right">
-                <h1 className='text-black rounded-xl text-4xl p-4 bg-white '>Achievements</h1>
+                <h1 className='text-black rounded-xl md:text-4xl text-3xl p-4 bg-white '>Achievements</h1>
             <ol class="relative border-s mt-8 border-gray-200 dark:border-gray-700">
                 <li class="mb-10 ms-6">
                     <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
