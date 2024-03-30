@@ -8,9 +8,9 @@ import wack from "/wack.png"
 const Project = () => {
     return (
         <div class="flex flex-col sm:flex-row min-h-screen px-8 pt-8 md:pt-16 flex-wrap justify-center bg-zinc-900 gap-16" style={{ backgroundImage: `url(${backgroundImg})`, backgroundSize: 'cover', }}>
-             <div class="group md:h-[50vh] md:w-[40vw] h-[60vh] w-[100%]   [perspective:1000px]">
+             <div class="group md:h-[50vh] md:w-[40vw] h-[45vh] w-[100%]   [perspective:1000px]">
                 <div class="relative h-full  w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                    <img className=" border-2 md:p-6 p-4 md:h-[50vh] md:w-[40vw] h-[60vh] w-[100%] rounded-xl " src={expense} alt="" />
+                    <img className=" border-2 md:p-6 p-4 md:h-[50vh] md:w-[40vw] h-[45vh] w-[100%] rounded-xl " src={expense} alt="" />
 
                     <div class="absolute inset-0 h-full w-full rounded-xl bg-[#fdfcf7] p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
                         <div class="flex flex-col justify-between h-full">
@@ -33,9 +33,9 @@ const Project = () => {
                 </div>
             </div>
             
-            <div class="group md:h-[50vh] md:w-[40vw] h-[60vh] w-[100%]   [perspective:1000px]">
+            <div class="group md:h-[50vh] md:w-[40vw] h-[45vh] w-[100%]   [perspective:1000px]">
                 <div class="relative h-full  w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                    <img className=" border-2 md:p-6 p-4 md:h-[50vh] md:w-[40vw] h-[60vh] w-[100%] rounded-xl " src={bootstrap} alt="" />
+                    <img className=" border-2 md:p-6 p-4 md:h-[50vh] md:w-[40vw] h-[45vh] w-[100%] rounded-xl " src={bootstrap} alt="" />
 
                     <div class="absolute inset-0 h-full w-full rounded-xl bg-[#fdfcf7] p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
                         <div class="flex flex-col justify-between h-full">
@@ -56,9 +56,9 @@ const Project = () => {
                 </div>
             </div>
 
-            <div class="group md:h-[50vh] md:w-[40vw] h-[60vh] w-[100%]   [perspective:1000px]">
+            <div class="group md:h-[50vh] md:w-[40vw] h-[45vh] w-[100%]   [perspective:1000px]">
                 <div class="relative h-full  w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                    <img className=" border-2 md:p-6 p-4 md:h-[50vh] md:w-[40vw] h-[60vh] w-[100%] rounded-xl " src={dictionary} alt="" />
+                    <img className=" border-2 md:p-6 p-4 md:h-[50vh] md:w-[40vw] h-[45vh] w-[100%] rounded-xl " src={dictionary} alt="" />
 
                     <div class="absolute inset-0 h-full w-full rounded-xl bg-[#fdfcf7] p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
                         <div class="flex flex-col justify-between h-full">
@@ -80,9 +80,9 @@ const Project = () => {
                 </div>
             </div>
 
-            <div class="group md:h-[50vh] md:w-[40vw] h-[60vh] w-[100%]   [perspective:1000px]">
+            <div class="group md:h-[50vh] md:w-[40vw] h-[45vh] w-[100%]   [perspective:1000px]">
                 <div class="relative h-full  w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                    <img className=" border-2 md:p-6 p-4 md:h-[50vh] md:w-[40vw] h-[60vh] w-[100%] rounded-xl " src={wack} alt="" />
+                    <img className=" border-2 md:p-6 p-4 md:h-[50vh] md:w-[40vw] h-[45vh] w-[100%] rounded-xl " src={wack} alt="" />
 
                     <div class="absolute inset-0 h-full w-full rounded-xl bg-[#fdfcf7] p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
                         <div class="flex flex-col justify-between h-full">
