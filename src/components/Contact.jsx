@@ -41,8 +41,9 @@ const Contact = () => {
         <div className="flex flex-col gap-4 text-gray-300">
           <p><span className="font-bold">Name:</span> Sattva Doshi</p>
           <p><span className="font-bold">Email:</span> sattvadoshi103@gmail.com</p>
-          <p><span className="font-bold">LinkedIn:</span> <a href="https://www.linkedin.com/in/sattva-doshi-37b0851bb/" className="text-blue-400 hover:text-blue-300">www.linkedin.com/in/sattva-doshi/</a></p>
-          <p><span className="font-bold">GitHub:</span> <a href="#" className="text-blue-400 hover:text-blue-300">github.com/johndoe</a></p>
+          <p><span className="font-bold">Phone:</span> +91 80800 40672</p>
+          <p><span className="font-bold">LinkedIn:</span> <a target='_blank' href="https://www.linkedin.com/in/sattva-doshi-37b0851bb/" className="text-blue-400 hover:text-blue-300">linkedin.com/in/sattva-doshi</a></p>
+          <p><span className="font-bold">GitHub:</span> <a target='_blank' href="https://github.com/SattvaDoshi" className="text-blue-400 hover:text-blue-300">github.com/SattvaDoshi</a></p>
         </div>
       </div>
       <form onSubmit={handleSubmit} className="md:w-1/2">

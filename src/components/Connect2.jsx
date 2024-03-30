@@ -15,25 +15,25 @@ const ConnectPage = () => {
                     className={`bg-white text-black-300 px-4 py-2 rounded-lg ${selectedSocialMedia === 'Linkedin' ? 'border-2 border-blue-500' : ''}`}
                     onClick={() => handleSocialMediaClick('Linkedin')}
                 >
-                    Linkedin
+                    <a target='_blank' href="https://www.linkedin.com/in/sattva-doshi-37b0851bb/">Linkedin</a>
                 </button>
                 <button
                     className={`bg-white text-black-300 px-4 py-2 rounded-lg ${selectedSocialMedia === 'Twitter' ? 'border-2 border-blue-500' : ''}`}
                     onClick={() => handleSocialMediaClick('Twitter')}
                 >
-                    Twitter
+                    <a target='_blank' href="https://twitter.com/Sattva_Doshi">Twitter</a>
                 </button>
                 <button
                     className={`bg-white text-black-300 px-4 py-2 rounded-lg ${selectedSocialMedia === 'Instagram' ? 'border-2 border-blue-500' : ''}`}
                     onClick={() => handleSocialMediaClick('Instagram')}
                 >
-                    Instagram
+                    <a target='_blank' href="https://www.instagram.com/__sattva__10/">Instagram</a>
                 </button>
                 <button
                     className={`bg-white text-black-300 px-4 py-2 rounded-lg ${selectedSocialMedia === 'Github' ? 'border-2 border-blue-500' : ''}`}
                     onClick={() => handleSocialMediaClick('Github')}
                 >
-                    Github
+                    <a target='_blank' href="https://github.com/SattvaDoshi">Github</a>
                 </button>
             </div>
             {selectedSocialMedia && (

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap';
+import { NavLink } from 'react-router-dom';
 
 const Landing = () => {
   const textRef = useRef(null);
@@ -32,7 +33,9 @@ const Landing = () => {
     <div className="border-t-2 mt-16 md:mt-32 px-5 md:px-20 border-zinc-700 flex flex-col md:flex-row items-center justify-center md:justify-between">
       <div className="mb-4 md:mb-0">
         <div className="px-6 py-3 md:px-8 md:py-4 rounded-full border-[1px] mt-16 text-base md:text-lg text-white border-zinc-500 text-center md:text-left">
+          <NavLink to="/contact">
           Contact Me
+          </NavLink>
         </div>
       </div>
     </div>

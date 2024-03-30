@@ -38,7 +38,7 @@ const Skills = () => {
     { title: 'React', percentage: 80 },
     { title: 'JavaScript', percentage: 90 },
     { title: 'HTML & CSS', percentage: 95 },
-    { title: 'Vue.js', percentage: 75 },
+    { title: 'Next.js', percentage: 75 },
   ];
 
   const backendSkills = [
@@ -50,15 +50,15 @@ const Skills = () => {
 
   const languageSkills = [
     { title: 'C/C++', percentage: 85 },
-    { title: 'Java', percentage: 80 },
-    { title: 'Python', percentage: 90 },
+    { title: 'Java', percentage: 75 },
+    { title: 'Python', percentage: 70 },
     { title: 'JavaScript', percentage: 85 },
   ];  
 
   const miscSkills = [
     { title: 'Git', percentage: 90 },
-    { title: 'RESTful APIs', percentage: 80 },
-    { title: 'GraphQL', percentage: 70 },
+    { title: 'Creative Innovation', percentage: 80 },
+    { title: 'Problem Solving', percentage: 85 },
     { title: 'Testing', percentage: 75 },
   ];
 

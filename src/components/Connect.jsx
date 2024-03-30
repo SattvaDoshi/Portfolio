@@ -41,10 +41,10 @@ const Contact = () => {
                 <div className="socials absolute left-[50%] top-[80%] flex flex-col items-center -translate-x-[50%] -translate-y-[50%] ">
                     <h1 className='text-5xl text-zinc-700 '>Let's Connect</h1>
                     <div className="social-links gap-20 flex relative left-[50%]  -translate-x-[50%] -translate-y-[50%] mt-16">
-                        <a className='no-underline text-zinc-700 border-2 py-2 px-4 rounded-2xl border-zinc-700' href="">Linkedin</a>
-                        <a className='no-underline text-zinc-700 border-2 py-2 px-4 rounded-2xl border-zinc-700' href="">Twitter</a>
-                        <a className='no-underline text-zinc-700 border-2 py-2 px-4 rounded-2xl border-zinc-700' href="">Instagram</a>
-                        <a className='no-underline text-zinc-700 border-2 py-2 px-4 rounded-2xl border-zinc-700' href="">Github</a>
+                        <a className='no-underline text-zinc-700 border-2 py-2 px-4 rounded-2xl border-zinc-700' target='_blank' href="https://twitter.com/Sattva_Doshi">Twitter</a>
+                        <a className='no-underline text-zinc-700 border-2 py-2 px-4 rounded-2xl border-zinc-700' target='_blank' href="https://www.instagram.com/__sattva__10/">Instagram</a>
+                        <a className='no-underline text-zinc-700 border-2 py-2 px-4 rounded-2xl border-zinc-700' target='_blank' href="https://github.com/SattvaDoshi">Github</a>
+                        <a className='no-underline text-zinc-700 border-2 py-2 px-4 rounded-2xl border-zinc-700' target='_blank' href="https://www.linkedin.com/in/sattva-doshi-37b0851bb/">Linkedin</a>
                     </div>
                 </div>
             </div>
