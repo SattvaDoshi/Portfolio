@@ -1,55 +1,81 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react';
+import { motion } from 'framer-motion'; // For animations (optional)
 
 const Contact = () => {
-    const [rotate, setRotate] = useState(0);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [success, setSuccess] = useState(false);
 
-    useEffect(() => {
-        window.addEventListener("mousemove", (e) => {
-            let mouseX = e.clientX;
-            let mouseY = e.clientY;
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-            let deltaX = mouseX - window.innerWidth / 2;
-            let deltaY = mouseY - window.innerHeight / 2;
+    // Implement form submission logic here (e.g., email sending or API call)
+    // For example:
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, message }),
+    });
 
-            var angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
-            setRotate(angle - 180);
-        })
-    }, [])
+    if (response.ok) {
+      setSuccess(true);
+      setName('');
+      setEmail('');
+      setMessage('');
+    } else {
+      // Handle errors
+      console.error('Error submitting form:', response.statusText);
+    }
+  };
 
-
-    return (
-        <div className='w-full h-screen p-20 mt-20'>
-            <div className="w-full relative h-full bg-blue-300 rounded-2xl ">
-                <div className=" absolute flex gap-10  left-1/2 top-1/3 -translate-x-[50%] -translate-y-[50%] ">
-                    <div className="w-[14vw] h-[14vw] bg-zinc-100 flex justify-center items-center rounded-full ">
-                        <div className="w-2/3 h-2/3 relative bg-zinc-800  rounded-full">
-                            <div style={{ transform: `translate(-50%,-50%) rotate(${rotate}deg)` }} className="line absolute w-full h-8 left-1/2 top-1/2 -translate-x-[50%] -translate-y-[50%]">
-                                <div className="w-8 h-8 bg-zinc-100 rounded-full"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-[14vw] h-[14vw] bg-zinc-100 flex justify-center items-center rounded-full ">
-                        <div className="w-2/3 h-2/3 relative bg-zinc-800  rounded-full">
-                            <div style={{ transform: `translate(-50%,-50%) rotate(${rotate}deg)` }} className="line absolute w-full h-8 left-1/2 top-1/2 -translate-x-[50%] -translate-y-[50%]">
-                                <div className="w-8 h-8 bg-zinc-100 rounded-full"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div className="socials absolute left-[50%] top-[80%] flex flex-col items-center -translate-x-[50%] -translate-y-[50%] ">
-                    <h1 className='text-5xl text-zinc-700 '>Let's Connect</h1>
-                    <div className="social-links gap-20 flex relative left-[50%]  -translate-x-[50%] -translate-y-[50%] mt-16">
-                        <a className='no-underline text-zinc-700 border-2 py-2 px-4 rounded-2xl border-zinc-700' href="">Linkedin</a>
-                        <a className='no-underline text-zinc-700 border-2 py-2 px-4 rounded-2xl border-zinc-700' href="">Twitter</a>
-                        <a className='no-underline text-zinc-700 border-2 py-2 px-4 rounded-2xl border-zinc-700' href="">Instagram</a>
-                        <a className='no-underline text-zinc-700 border-2 py-2 px-4 rounded-2xl border-zinc-700' href="">Github</a>
-                    </div>
-                </div>
-            </div>
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }} 
+      className="min-h-screen bg-gray-900 text-white px-4 py-16 md:px-20 md:py-40 flex flex-col space-y-12 md:flex-row md:space-y-0" // Responsive layout
+    >
+      <div className="flex flex-col space-y-4 md:w-1/2">
+      <h2 className="text-3xl lg:text-4xl text-white font-bold mb-4">Contact Information</h2>
+        <div className="flex flex-col gap-4 text-gray-300">
+          <p><span className="font-bold">Name:</span> Sattva Doshi</p>
+          <p><span className="font-bold">Email:</span> sattvadoshi103@gmail.com</p>
+          <p><span className="font-bold">LinkedIn:</span> <a href="https://www.linkedin.com/in/sattva-doshi-37b0851bb/" className="text-blue-400 hover:text-blue-300">www.linkedin.com/in/sattva-doshi/</a></p>
+          <p><span className="font-bold">GitHub:</span> <a href="#" className="text-blue-400 hover:text-blue-300">github.com/johndoe</a></p>
         </div>
-    )
-}
+      </div>
+      <form onSubmit={handleSubmit} className="md:w-1/2">
+        <input
+          type="text"
+          placeholder="Your Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          className="bg-gray-800 text-white px-4 py-2 rounded-lg w-full mb-4"
+        />
+        <input
+          type="email"
+          placeholder="Your Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="bg-gray-800 text-white px-4 py-2 rounded-lg w-full mb-4"
+        />
+        <textarea
+          placeholder="Your Message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          className="bg-gray-800 text-white px-4 py-2 rounded-lg w-full h-32 mb-4"
+        ></textarea>
+        <button
+          type="submit"
+          className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-lg"
+        >
+          Send Message
+        </button>
+        {success && <p className="text-green-500 mt-2">Message sent successfully!</p>}
+      </form>
+    </motion.div>
+  );
+};
 
-export default Contact
+export default Contact;

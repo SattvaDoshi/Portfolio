@@ -12,11 +12,11 @@ const Navbar = () => {
     <nav className="bg-gray-800 py-2">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
+          <div className="flex justify-between">
             <div className="flex-shrink-0">
                 <h1 className='text-2xl text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md'>{"<Sattva/>"}</h1>
             </div>
-            <div className="ml-8 hidden md:block">
+            <div className="ml-[60%] hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
                 <NavLink to=''>Home</NavLink>
@@ -25,7 +25,7 @@ const Navbar = () => {
                     <NavLink to='/projects'>Projects</NavLink>
                 </a>
                 <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
-                <NavLink to='/Education'>Education</NavLink>
+                <NavLink to='/experience'>Experience</NavLink>
                 </a>
                 <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
                 <NavLink to='/Skills'>Skills</NavLink>

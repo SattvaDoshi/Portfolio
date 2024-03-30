@@ -1,10 +1,21 @@
-import React from 'react'
-
+import React, { useEffect, useRef } from 'react'
+import gsap from 'gsap';
 
 const Landing = () => {
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline();
+    tl.from(textRef.current, {
+      opacity: 0,
+      y: 100,
+      duration: 1,
+      ease: 'power3.out',
+    });
+  }, []);
 
   return (
-    <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full h-screen bg-zinc-900 pt-1'>
+    <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full h-[70vh] md:h-screen bg-zinc-900 pt-1'>
     <div className="text mt-20 md:mt-32 px-5 md:px-20">
       <div className="masker">
         <h1 className='text-4xl md:text-8xl leading-[5vw] md:leading-[6vw] tracking-tighter font-semibold md:mt-2 text-white text-center md:text-left mt-8'>

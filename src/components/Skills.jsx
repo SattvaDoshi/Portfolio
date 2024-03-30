@@ -1,107 +1,101 @@
-import React, { useState } from 'react';
+import React, { useRef, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { gsap } from 'gsap';
 
-function SkillsSection() {
-  const [expandedSkills, setExpandedSkills] = useState({});
+const SkillItem = ({ back,title, percentage }) => {
+  const progressBarRef = useRef(null);
 
-  const skills = [
-    {
-      name: 'HTML',
-      level: 90,
-      description: 'Proficient in structuring and organizing web content.',
-      icon: 'fas fa-code', // Font Awesome icon for HTML
-    },
-    {
-      name: 'CSS',
-      level: 80,
-      description: 'Skilled in styling and visual presentation of web pages.',
-      icon: 'fas fa-palette', // Font Awesome icon for CSS
-    },
-    {
-      name: 'JavaScript',
-      level: 75,
-      description: 'Comfortable with front-end and back-end development using JavaScript.',
-      icon: 'fas fa-js', // Font Awesome icon for JavaScript
-    },
-    {
-      name: 'Bootstrap',
-      level: 60,
-      description: 'Familiar with grid system and components for rapid prototyping.',
-      icon: 'fas fa-bootstrap', // Font Awesome icon for Bootstrap
-    },
-    {
-      name: 'Tailwind CSS',
-      level: 85,
-      description: 'Experience with utility-first approach for flexible styling.',
-      icon: 'fas fa-wind', // Font Awesome icon for Tailwind CSS
-    },
-    {
-      name: 'React',
-      level: 80,
-      description: 'Building interactive and reusable UI components with React.',
-      icon: 'fas fa-react', // Font Awesome icon for React
-    },
-    {
-      name: 'Node.js',
-      level: 70,
-      description: 'Server-side development using JavaScript.',
-      icon: 'fas fa-node-js', // Font Awesome icon for Node.js
-    },
-    {
-      name: 'Express.js',
-      level: 65,
-      description: 'Creating web applications with the Express framework.',
-      icon: 'fas fa-express', // Font Awesome icon for Express.js
-    },
-    {
-      name: 'MongoDB',
-      level: 60,
-      description: 'NoSQL database for flexible data storage.',
-      icon: 'fas fa-database', // Font Awesome icon for MongoDB
-    },
+  useEffect(() => {
+    gsap.to(progressBarRef.current, {
+      duration: 3,
+      ease: 'power3.out',
+      width: `${percentage}%`,
+    });
+  }, [percentage]); 
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5 }} 
+      className="flex flex-col space-y-2 mb-4"
+    >
+      <h4 className="text-lg font-medium text-white">{title}</h4>
+      <div className="relative w-full h-5 rounded-full bg-gray-700">
+        <motion.div
+          ref={progressBarRef}
+          className={`absolute h-full rounded-full ${back}`}
+          
+          />
+      
+      </div>
+      <p className="text-xs text-gray-400">{percentage}%</p>
+    </motion.div>
+  );
+};
+
+const Skills = () => {
+  const frontendSkills = [
+    { title: 'React', percentage: 80 },
+    { title: 'JavaScript', percentage: 90 },
+    { title: 'HTML & CSS', percentage: 95 },
+    { title: 'Vue.js', percentage: 75 },
   ];
 
-  const toggleSkill = (skillName) => {
-    setExpandedSkills((prevExpandedSkills) => ({
-      ...prevExpandedSkills,
-      [skillName]: !prevExpandedSkills[skillName],
-    }));
-  };
+  const backendSkills = [
+    { title: 'Node.js', percentage: 80 },
+    { title: 'Express.js', percentage: 85 },
+    { title: 'MongoDB', percentage: 70 },
+    { title: 'SQL', percentage: 75 },
+  ];
+
+  const languageSkills = [
+    { title: 'C/C++', percentage: 85 },
+    { title: 'Java', percentage: 80 },
+    { title: 'Python', percentage: 90 },
+    { title: 'JavaScript', percentage: 85 },
+  ];  
+
+  const miscSkills = [
+    { title: 'Git', percentage: 90 },
+    { title: 'RESTful APIs', percentage: 80 },
+    { title: 'GraphQL', percentage: 70 },
+    { title: 'Testing', percentage: 75 },
+  ];
 
   return (
-    <section className="bg-zinc-900 py-20 text-white py-20 px-4">
-      <h2 className="text-5xl center font-bold mb-8">My Skills</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {skills.map((skill) => (
-          <div
-            key={skill.name}
-            className="group bg-gray-700 rounded-lg p-4 shadow-md hover:bg-gray-600 cursor-pointer"
-          >
-            <div className="flex items-center mb-4">
-              <i className={`text-3xl text-indigo-500 mr-4 ${skill.icon}`}></i>
-              <h3 className="text-lg font-medium group-hover:text-indigo-500">
-                {skill.name}
-              </h3>
-            </div>
-            <div className="w-full bg-gray-200 h-3 rounded-full mb-2">
-              <div
-                className="w-full h-3 bg-indigo-500 rounded-full"
-                style={{ width: `${skill.level}%` }}
-              ></div>
-            </div>
-            <button
-              className="text-sm text-gray-400 hover:text-gray-300 mt-2"
-              onClick={() => toggleSkill(skill.name)}
-            >
-              {expandedSkills[skill.name] ? 'Hide Details' : 'Show Details'}
-            </button>
-            {expandedSkills[skill.name] && (
-              <p className="text-gray-400 mt-4">{skill.description}</p>
-            )}
-          </div>
-        ))}
-      </div>    
-    </section>
-  );
-}
+    <div className="min-h-screen bg-gray-900 text-white px-4 py-8 md:px-20 md:py-16 flex flex-col items-center space-y-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
 
-export default SkillsSection;
+        <div className="border-2 w-[80vw] md:w-[30vw] rounded-lg p-6">
+          <h3 className="text-3xl text-blue-500 font-bold mb-4">Frontend</h3>
+          {frontendSkills.map((skill) => (
+            <SkillItem back="bg-blue-500" key={skill.title} {...skill} />
+          ))}
+        </div>
+
+        <div className="border-2 w-[80vw] md:w-[30vw] rounded-lg p-6">
+          <h3 className="text-3xl text-red-400 font-bold mb-4">Backend</h3>
+          {backendSkills.map((skill) => (
+            <SkillItem back="bg-red-500" key={skill.title} {...skill} />
+          ))}
+        </div>
+
+        <div className="border-2 w-[80vw] md:w-[30vw] rounded-lg p-6">
+          <h3 className="text-3xl text-green-400 font-bold mb-4">Languages</h3>
+          {languageSkills.map((skill) => (
+            <SkillItem back="bg-green-500" key={skill.title} {...skill} />
+          ))}
+        </div>
+
+        <div className="border-2 w-[80vw] md:w-[30vw] rounded-lg p-6">
+          <h3 className="text-3xl text-purple-600 font-bold mb-4">Miscellaneous</h3>
+          {miscSkills.map((skill) => (
+            <SkillItem back="bg-purple-600" key={skill.title} {...skill} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Skills;

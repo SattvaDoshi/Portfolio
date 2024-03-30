@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div data-scroll data-scroll-section data-scroll-speed="" className='w-full p-10 md:p-20 bg-[#CDEA68] rounded-tl-3xl text-black rounded-tr-3xl'>
+        <div className='w-full p-10 md:p-20 bg-[#CDEA68] rounded-tl-3xl text-black rounded-tr-3xl'>
             <h1 className='text-3xl md:text-5xl tracking-tight'>Sattva Doshi | B.tech in IT | MERN Developer</h1>
             <div className='w-full flex flex-col md:flex-row gap-8  border-t-2 md:border-t-0 border-[#3c5e17] mt-8'>
                 <div className="w-full md:w-1/2 mt-8 md:mt-16">
