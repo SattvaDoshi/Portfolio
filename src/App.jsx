@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import "./index.css"
 import Landing from './components/Landing'
 import Marque from './components/Marque'
 import About from './components/About'

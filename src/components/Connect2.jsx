@@ -8,7 +8,8 @@ const ConnectPage = () => {
     };
 
     return (
-        <div className="bg-blue-300 min-h-[40vh] mx-16 rounded-xl text-black flex flex-col items-center justify-center">
+        <div className='pb-8'>
+            <div className="bg-blue-300 min-h-[40vh] mx-16 rounded-xl text-black flex flex-col items-center justify-center">
             <h1 className="text-4xl mb-8">Connect with Me</h1>
             <div className="flex flex-wrap justify-center gap-4">
                 <button
@@ -39,6 +40,7 @@ const ConnectPage = () => {
             {selectedSocialMedia && (
                 <p className="text-white mt-4">You selected {selectedSocialMedia}</p>
             )}
+        </div>
         </div>
     );
 };

@@ -17,13 +17,13 @@ const Project = () => {
 
                             <div class="mt-auto md:space-y-4 sm:mt-0 sm:space-y-2">
                                 <h1 class="text-[#16453a] text-xl sm:text-2xl font-bold leading-5">Expense Tracker</h1>
-                                <p class="text-[#16453a] text-lg sm:text-base font-light leading-5 overflow-hidden">
+                                <p class="text-[#16453a] mt-2 text-lg sm:text-base font-light leading-5 overflow-hidden">
                                 This is the  Expense Tracker application developed using React where in you can enter Your
                                 Budget and named it and then can remove expenditure , you can make N number of Expense. This will be
                                 Stored in your local Storage
                                 </p>
                                 <p class="text-[#16453a] text-lg sm:text-base font-light leading-5">React.js | Tailwind | Localhost</p>
-                                <div class="flex gap-4 mt-16 sm:gap-16">
+                                <div class="flex gap-4 md:mt-16 mt-8 sm:gap-16">
                                     <button class="bg-[#CDEA68] h-12 w-24 sm:h-12 sm:w-32 rounded-xl cursor"><a target="_blank" href="https://expense-traker-zeta.vercel.app/">Live Demo</a></button>
                                     <button class="bg-[#CDEA68] h-12 w-24 sm:h-12 sm:w-32 rounded-xl cursor"><a target="_blank" href="https://github.com/SattvaDoshi/Expense-Traker">Code</a></button>
                                 </div>
@@ -46,7 +46,7 @@ const Project = () => {
                                 This is the Website for the Trading who Wants to online and I helped them in Making website. 
                                 This is Dynamic Website as well as Responsive</p>
                                 <p class="text-[#16453a] text-lg sm:text-base font-light leading-5">HTML | BOOTSTRAP | JS</p>
-                                <div class="flex gap-4 mt-16 sm:gap-16">
+                                <div class="flex gap-4 md:mt-16 mt-8 sm:gap-16">
                                     <button class="bg-[#CDEA68] h-12 w-24 sm:h-12 sm:w-32 rounded-xl cursor"><a target="_blank" href="https://trading-guru-ten.vercel.app/">Live Demo</a></button>
                                     <button class="bg-[#CDEA68] h-12 w-24 sm:h-12 sm:w-32 rounded-xl cursor"><a target="_blank" href="https://github.com/SattvaDoshi/Bootstrap">Code</a></button>
                                 </div>
@@ -70,7 +70,7 @@ const Project = () => {
                                     which my App is Supported in 7 Different Languaged
                                 </p>
                                 <p class="text-[#16453a] text-lg sm:text-base font-light leading-5">React.js | Material UI | API</p>
-                                <div class="flex gap-4 mt-16 sm:gap-16">
+                                <div class="flex gap-4 md:mt-16 mt-8 sm:gap-16">
                                     <button class="bg-[#CDEA68] h-12 w-24 sm:h-12 sm:w-32 rounded-xl cursor"><a target="_blank" href="https://dictionary-peach-tau.vercel.app/">Live Demo</a></button>
                                     <button class="bg-[#CDEA68] h-12 w-24 sm:h-12 sm:w-32 rounded-xl cursor"><a target="_blank" href="https://github.com/SattvaDoshi/Dictionary">Code</a></button>
                                 </div>
@@ -80,7 +80,7 @@ const Project = () => {
                 </div>
             </div>
 
-            <div class="group md:h-[50vh] md:w-[40vw] h-[45vh] w-[100%]   [perspective:1000px]">
+            <div class="group md:h-[50vh] md:w-[40vw] h-[45vh] w-[100%] mb-16 [perspective:1000px]">
                 <div class="relative h-full  w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                     <img className=" border-2 md:p-6 p-4 md:h-[50vh] md:w-[40vw] h-[45vh] w-[100%] rounded-xl " src={wack} alt="" />
 
@@ -94,7 +94,7 @@ const Project = () => {
                                     made and deployed on Github you can check out
                                 </p>
                                 <p class="text-[#16453a] text-lg sm:text-base font-light leading-5">HTML | CSS | JS</p>
-                                <div class="flex gap-4 mt-16 sm:gap-16">
+                                <div class="flex gap-4 md:mt-16 mt-8 sm:gap-16">
                                     <button class="bg-[#CDEA68] h-12 w-24 sm:h-12 sm:w-32 rounded-xl cursor"><a target="_blank" href="https://sattvadoshi.github.io/Whack-a-Mole/">Live Demo</a></button>
                                     <button class="bg-[#CDEA68] h-12 w-24 sm:h-12 sm:w-32 rounded-xl cursor"><a target="_blank" href="https://github.com/SattvaDoshi/Whack-a-Mole">Code</a></button>
                                 </div>

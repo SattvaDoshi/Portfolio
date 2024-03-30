@@ -1,4 +1,5 @@
 import React from 'react'
+import photo from '/photo.jpg'
 
 const About = () => {
     return (
@@ -12,8 +13,8 @@ const About = () => {
                     I embrace challenges as opportunities for growth. Crafting meaningful digital solutions fuels my passion, 
                     and I'm dedicated to honing my skills to deliver impactful results.</p>
                 </div>
-                <div className="w-full md:w-1/2 md:ml-32 h-[50vh] md:w-[60vh] mt-8 md:mt-0 rounded-3xl bg-red-500">
-
+                <div className="w-full md:w-1/2 md:ml-16 h-[50vh] md:w-[60vh] mt-8 md:mt-0  ">
+                    <img className=' md:w-1/2 md:ml-16 h-[50vh] md:w-[60vh] rounded-3xl' src={photo} alt="" />
                 </div>
             </div>
         </div>
