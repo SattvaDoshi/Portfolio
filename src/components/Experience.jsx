@@ -62,7 +62,7 @@ const ExperiencePage = () => {
                     <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Bull Run</h3>
                     <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">June 14, 2023</time>
                     <p class="text-base font-normal text-gray-500 dark:text-gray-400">I stood First in the Mock Stock (Virtual Trading) held in our College. This was Intraday Event comprises 4 hrs of Trading </p>
-                    <a className='block mb-2 text-sm font-normal leading-none mt-2 text-gray-400 dark:text-blue-500' href="https://trading-guru-ten.vercel.app/" target='_blank' >Here's the Certificate | Click here</a>
+                    <a className='block mb-2 text-sm font-normal leading-none mt-2 text-gray-400 dark:text-blue-500' href="https://drive.google.com/file/d/15bj9CLcA89AMXq6u4VtJrUuFnof_QEG_/view" target='_blank' >Here's the Certificate | Click here</a>
 
                 </li>
                 {/* <li class="ms-6">
