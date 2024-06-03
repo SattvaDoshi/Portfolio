@@ -10,6 +10,32 @@ const Project = () => {
         <div class="flex flex-col sm:flex-row min-h-screen px-8 pt-8 md:pt-16 flex-wrap justify-center bg-zinc-900 gap-16" style={{ backgroundImage: `url(${backgroundImg})`, backgroundSize: 'cover', }}>
              <div class="group md:h-[50vh] md:w-[40vw] h-[45vh] w-[100%]   [perspective:1000px]">
                 <div class="relative h-full  w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                    <img className=" border-2 md:p-6 p-4 md:h-[50vh] md:w-[40vw] h-[45vh] w-[100%] rounded-xl " 
+                    src="https://camo.githubusercontent.com/d72167fb01d9e94925a3ce07a3e5842b60a266eccd7515b89245d66a7d8b5d25/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f646877627973686d6f2f696d6167652f75706c6f61642f76313639353238333639392f70726f6a656374253230696d616765732f6c6d732d686f6d652e706e67" 
+                    alt="" />
+
+                    <div class="absolute inset-0 h-full w-full rounded-xl bg-[#fdfcf7] p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                        <div class="flex flex-col justify-between h-full">
+
+                            <div class="mt-auto md:space-y-4 sm:mt-0 sm:space-y-2">
+                                <h1 class="text-[#16453a] text-xl sm:text-2xl mb-6 font-bold leading-5">Expense Tracker</h1>
+                                <p class="text-[#16453a] mt-2 text-lg sm:text-base font-light leading-5 overflow-hidden">
+                                This is a lms project, that i have build while learning full stack development. 
+                                In this project there are lots of feature like authentication, user management, 
+                                course management, lecture management, lecture dashboard & admin dashboard and more...
+                                </p>
+                                <p class="text-[#16453a] text-lg sm:text-base font-light leading-5">React.js | Tailwind | Localhost</p>
+                                <div class="flex gap-4 md:mt-16 mt-8 sm:gap-16">
+                                    <button class="bg-[#CDEA68] h-12 w-24 sm:h-12 sm:w-32 rounded-xl cursor"><a target="_blank" href="https://lms-system-omega.vercel.app/">Live Demo</a></button>
+                                    <button class="bg-[#CDEA68] h-12 w-24 sm:h-12 sm:w-32 rounded-xl cursor"><a target="_blank" href="https://github.com/SattvaDoshi/LMS-System?tab=readme-ov-file">Code</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="group md:h-[50vh] md:w-[40vw] h-[45vh] w-[100%]   [perspective:1000px]">
+                <div class="relative h-full  w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                     <img className=" border-2 md:p-6 p-4 md:h-[50vh] md:w-[40vw] h-[45vh] w-[100%] rounded-xl " src={expense} alt="" />
 
                     <div class="absolute inset-0 h-full w-full rounded-xl bg-[#fdfcf7] p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
