@@ -48,7 +48,7 @@ const Project = () => {
                                 Budget and named it and then can remove expenditure , you can make N number of Expense. This will be
                                 Stored in your local Storage
                                 </p>
-                                <p class="text-[#16453a] text-lg sm:text-base font-light leading-5">React.js | Tailwind | Localhost</p>
+                                <p class="text-[#16453a] text-lg sm:text-base font-light leading-5">MERN Stack </p>
                                 <div class="flex gap-4 md:mt-16 mt-8 sm:gap-16">
                                     <button class="bg-[#CDEA68] h-12 w-24 sm:h-12 sm:w-32 rounded-xl cursor"><a target="_blank" href="https://expense-traker-zeta.vercel.app/">Live Demo</a></button>
                                     <button class="bg-[#CDEA68] h-12 w-24 sm:h-12 sm:w-32 rounded-xl cursor"><a target="_blank" href="https://github.com/SattvaDoshi/Expense-Traker">Code</a></button>
